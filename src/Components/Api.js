@@ -45,7 +45,7 @@ function useLaunches() {
     const [launches, setLaunches] = React.useState([]);
     React.useEffect(() => {
         fetch(
-            "https://api.thegraph.com/subgraphs/name/huckleberrydex/huckleberry-subgraph",
+            "{YOUR_GRAPHQL_API_LINK}",
             {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
