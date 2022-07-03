@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-const FILMS_QUERY = `
+const DATA_QUERY = `
 {
   uniswapFactory(
     id: "0x017603C8f29F7f6394737628a93c57ffBA1b7256"
@@ -49,7 +49,7 @@ function useLaunches() {
             {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ query: FILMS_QUERY }),
+                body: JSON.stringify({ query: DATA_QUERY }),
             }
         )
             .then((response) => response.json())
